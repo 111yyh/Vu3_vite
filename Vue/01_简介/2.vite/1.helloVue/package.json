@@ -1,0 +1,22 @@
+{
+  "name": "1.hellovue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "scripts": {
+    "dev": "npx vite --open --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}

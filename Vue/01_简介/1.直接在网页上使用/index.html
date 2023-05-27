@@ -18,10 +18,21 @@
         const Root = {
             data() {
                 return {
-                    message:"dkjdk"
+                    message:"dkjdk",
+                    count:0
                 }
             },
-            template:"<h1>fuck,{{ message }}</h1>" //模板，希望组件在页面中呈现的样子
+
+            //定义模板的方式有三种：
+            //1.在组件中通过template去指定
+            //2.直接在网页的根元素中指定       （如果在组件中定义了template，则会优先使用组件中的template作为模板，同时根元素的所有内容都会被替换）
+            //3.组件中render()直接渲染
+            template:
+            `
+            <h1>fuck,{{ message }}</h1>
+            <button @click="count++">点击</button> 
+            <div>{{ count }}</div>
+            ` //模板，希望组件在页面中呈现的样子  
         }
 
         // 创建App实例,将实例在页面中挂载
